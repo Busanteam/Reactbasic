@@ -1,5 +1,9 @@
 module.exports = {
-  env: { browser: true, es2021: true, node: true },
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -9,15 +13,15 @@ module.exports = {
   ],
   overrides: [],
   parserOptions: {
-    ecmaFeatures: { jsx: true },
     ecmaVersion: 'latest',
     sourceType: 'module',
+    ecmaFeatures: { jsx: true },
   },
-  plugins: ['react', 'react-hooks', 'jsx-a11y'],
+  plugins: ['react', 'react-hooks', 'jsx-a11y', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
-    'react-hooks/rules-of-hooks': 'error',
+    // 'react-hooks/rules-of-hooks': 'warn',
     'react-hooks/exhaustive-deps': 'off',
     'react/prop-types': 'off',
     'prettier/prettier': 'error',

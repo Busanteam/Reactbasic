@@ -1,4 +1,4 @@
-import { useReducer, useState } from 'react';
+import { useReducer } from 'react';
 // import { flushSync } from 'react-dom';
 import './App.css';
 import { Hello } from './components/Hello';
